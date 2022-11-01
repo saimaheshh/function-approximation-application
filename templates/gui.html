@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price</title>    
+    <link rel="stylesheet" href="gui.css">
+</head>
+
+<body bgcolor="lightgreen">
+
+<p align="center" class="heading"><b>Function Approximation</b></p>
+<div align="center">
+    <form action="{{ url_for('predict')}}" method="POST">
+        <div class="b"><b>Input</b><br>
+            <input class="a" type="Number" step = 0.01 name ="Input" required="required"></div>
+
+        </select></div>
+
+        <div class="c" align="center"><button type="submit" class="d">Calculate output</button></div>
+
+    </form></div>
+<p align="center" class="heading">{{ prediction_text }}</p>
+<p>ASM</p>
+</body>
+</html>
